@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>0609C5D3-BA47-479E-8CF0-02CA549A0CD6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E88132E-17EA-46E8-BAD2-2C8ABC2F1899</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7F6079C9-9350-4223-9C53-93059C74100B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0879FABD-D4C3-4862-BAC5-20C51AD2B4B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B0E993CF-5602-4924-8280-EC37444049A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A24CC773-81EB-4B3F-9239-44BDAF47AE60</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DEAFE6E8-2EF9-4588-9228-59889BA5B418</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0879FABD-D4C3-4862-BAC5-20C51AD2B4B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Jenkins</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>jenkins_clear.py</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4E88132E-17EA-46E8-BAD2-2C8ABC2F1899</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>jenkins-clear</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Jenkins: clear settings</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0609C5D3-BA47-479E-8CF0-02CA549A0CD6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>jenkins_add.py</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A24CC773-81EB-4B3F-9239-44BDAF47AE60</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>jenkins-add</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Jenkins: add server</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B0E993CF-5602-4924-8280-EC37444049A7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>jenkins</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>import sys
+from urlparse import urljoin
+
+from workflow import Workflow3
+
+from src import state
+
+
+def main(wf):
+    for url, job in state.iter_jobs():
+        wf.add_item(
+            title=job['name'],
+            subtitle=url,
+            arg=urljoin(url, 'job/' + job['name']),
+            # uid="{}:{}".format(url, job['name']),
+            valid=True,
+        )
+
+    wf.send_feedback()
+
+
+if __name__ == '__main__':
+    wf = Workflow3()
+    sys.exit(wf.run(main))
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>jenkins_search.py</string>
+				<key>subtext</key>
+				<string>Search for jobs</string>
+				<key>title</key>
+				<string>Jenkins: search jobs</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DEAFE6E8-2EF9-4588-9228-59889BA5B418</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0879FABD-D4C3-4862-BAC5-20C51AD2B4B8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>jenkins-list</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import sys
+from urlparse import urljoin
+
+from workflow import Workflow3
+from workflow import web
+
+
+def main(wf):
+    try:
+        jenkinses = wf.settings['jenkinses']
+    except KeyError:
+        jenkinses = []
+
+    wf.add_item(title=str(jenkinses))
+
+    for url in jenkinses:
+        wf.add_item(
+            title=url,
+            arg=url,
+            valid=True,
+        )
+
+
+if __name__ == '__main__':
+    wf = Workflow3()
+    sys.exit(wf.run(main))
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>jenkins_list.py</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Jenkins: list servers</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7F6079C9-9350-4223-9C53-93059C74100B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0609C5D3-BA47-479E-8CF0-02CA549A0CD6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>0879FABD-D4C3-4862-BAC5-20C51AD2B4B8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
+		<key>4E88132E-17EA-46E8-BAD2-2C8ABC2F1899</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>7F6079C9-9350-4223-9C53-93059C74100B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>480</integer>
+		</dict>
+		<key>A24CC773-81EB-4B3F-9239-44BDAF47AE60</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>B0E993CF-5602-4924-8280-EC37444049A7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>DEAFE6E8-2EF9-4588-9228-59889BA5B418</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
