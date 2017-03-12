@@ -19,3 +19,10 @@ def get_jobs(url):
     r = web.get(api_url)
     r.raise_for_status()
     return r.json()['jobs']
+
+
+def get_job(base_url, job_name):
+    api_url = urljoin(base_url, 'job/{}/api/json'.format(job_name))
+    r = web.get(api_url)
+    r.raise_for_status()
+    return r.json()

@@ -8,6 +8,7 @@ from workflow import Workflow3, web
 
 def main(wf):
     for base_url in wf.settings['jenkinses']:
+        query = wf.args[0].lower()
         parsed_url = urlparse(base_url)
         cache_key = parsed_url.netloc.replace('.', '_').replace(':', '-')
         api_url = urljoin(base_url, 'api/json')
@@ -15,6 +16,9 @@ def main(wf):
         jobs = wf.cached_data(cache_key, fetcher, max_age=5 * 60) or []
 
         for job in jobs:
+            if query not in job['name'].lower():
+                continue
+
             job_url = urljoin(base_url, 'job/{}/'.format(job['name']))
             wf.add_item(
                 title=job['name'],
